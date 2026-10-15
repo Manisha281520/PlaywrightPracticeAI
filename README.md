@@ -1,0 +1,2 @@
+# PlaywrightPracticeAI
+Playwright practice test
