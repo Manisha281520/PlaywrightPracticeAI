@@ -17,4 +17,11 @@ test('This test will FAIL on purpose', async ({ page }) => {
     await expect(page).toHaveTitle('Wrong Title')  // wrong title
   })
 
+  test('This test will FAIL on purpose', async ({ page }) => {
+    await page.goto('/')
+    // force a definite failure
+    await expect(page.getByRole('button', { name: 'XYZABC123' })).toBeVisible()
+  })
+
+
 
