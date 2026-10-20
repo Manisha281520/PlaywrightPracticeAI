@@ -1,23 +1,17 @@
 {
-  "name": "playwrightpracticeai",
+  "name": "playwright-practice-ai",
   "version": "1.0.0",
-  "description": "Playwright practice test",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Manisha281520/PlaywrightPracticeAI.git"
+  "description": "Playwright practice framework with auth, fixtures, POM and API testing",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test tests/login.spec.js",
+    "test:api": "npx playwright test tests/api.spec.js",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Manisha281520/PlaywrightPracticeAI/issues"
-  },
-  "homepage": "https://github.com/Manisha281520/PlaywrightPracticeAI#readme",
   "devDependencies": {
-    "@playwright/test": "^1.64.1",
-    "@types/node": "^26.6.5"
+    "@playwright/test": "^1.40.0",
+    "dotenv": "^16.0.0"
   }
 }
